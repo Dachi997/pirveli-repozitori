@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+ }
+td {
+    text-align: center;
+    border: 2px solid blue;
+}
+table tbody tr:nth-child(odd) td:nth-child(odd) {
+    background-color: red;
+}
+table tbody tr:nth-child(odd) td:nth-child(even) {
+    background-color: black;
+}
+table tbody tr:nth-child(even) td:nth-child(odd) {
+    background-color: blue;
+}
+table tbody tr:nth-child(even) td:nth-child(even) {
+    background-color: red;
+}
+
