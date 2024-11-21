@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  gap: 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.container,
+.summary {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  width: 250px;
+  height: 320px;
+  text-align: center;
+}
+.container {
+  background: linear-gradient(to bottom, #7857ff, #2e2be9);
+  color: #fff;
+}
+h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #cac9ff;
+}
+.container h2 {
+  color: rgba(255, 255, 255, 0.8);
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score .status {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.score .description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 20px;
+  line-height: 1.4;
+}
+
+.summary h2 {
+  color: #303b5a;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.reaction {
+  background-color: rgba(255, 87, 87, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: rgba(255, 176, 31, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: rgba(0, 189, 145, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: rgba(17, 37, 212, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  background-color: #303b5a;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #7857ff, #2e2be9);
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .container,
+  .summary {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .container {
+    border-radius: 0 0 15px 15px;
+  }
+}
